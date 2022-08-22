@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/tv_app_name"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo_min" />
+
+    <LinearLayout
+        android:id="@+id/footer_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/meroon"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="bottom" />
+
+        <ImageView
+            android:id="@+id/but_img_presence_search"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/acp_home" />
+
+        <ImageView
+            android:id="@+id/but_img_presence_settings"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/acp_settings" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/tv_blank_space"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/img_logo"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_label_presence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_blank_space"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/menu_presence"
+        android:textAlignment="center"
+        android:textColor="@color/meroon"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/tv_label_presence_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label_presence"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/inf_info5"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pannel_blank_rounded"
+        android:layout_below="@id/tv_label_presence_info"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/input_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:src="@drawable/edit_icon" />
+
+            <EditText
+                android:id="@+id/id_presence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/menu_presence"
+                android:inputType="number"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/but_presence_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/but_presence_cancel"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_ok"
+                android:text="@string/but_update"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/but_presence_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_cancel"
+                android:text="@string/but_cancel" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pannel_blank_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/footer_pannel"
+        android:background="@color/meroon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottom_rounded_corner_tv" />
+    </LinearLayout>
+
+</RelativeLayout>

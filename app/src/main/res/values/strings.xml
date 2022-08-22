@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Airswing</string>
+    <string name="txt_footer">.</string>
+    <string name="ble_not_support" translatable="false">BLE is not supported</string>
+    <string name="ble_err_title" translatable="false">Not compatible</string>
+    <string name="ble_err_msg" translatable="false">Your phone does not support Bluetooth</string>
+    <string name="sys_msg1" translatable="false">Scanning Devices</string>
+    <string name="sys_msg2" translatable="false">Device not connected</string>
+    <string name="sys_msg3" translatable="false">Communication failed</string>
+    <string name="sys_msg4" translatable="false">Service unavailable</string>
+    <string name="sys_msg5" translatable="false">Communication channel lost</string>
+    <string name="pop_cn_title" translatable="false">Change Device Name</string>
+    <string name="pop_cn_msg" translatable="false">Enter Device Name</string>
+    <string name="pop_login_title" translatable="false">Login</string>
+    <string name="pop_login_msg" translatable="false">Please enter login code</string>
+    <string name="pop_login_success" translatable="false">Login was successful, You can use all app functions as needed</string>
+    <string name="pop_login_fail" translatable="false">Login Failed</string>
+    <string name="pop_login_logoff_success" translatable="false">Log Off Suceess</string>
+    <string name="but_save" translatable="false">Save</string>
+    <string name="but_cancel" translatable="false">Cancel</string>
+    <string name="but_ok" translatable="false">Ok</string>
+    <string name="pop_cp_title" translatable="false">Change Presence Value</string>
+    <string name="pop_cp_msg" translatable="false">Enter Presence Value(0-60)</string>
+    <string name="pop_swf_title" translatable="false">Wifi Settings</string>
+    <string name="pop_swf_ssid" translatable="false">SSID</string>
+    <string name="pop_swf_psw" translatable="false">Password</string>
+    <string name="pop_swf_fail" translatable="false">Setting WiFi failed</string>
+    <string name="menu_name" translatable="false">Name</string>
+    <string name="menu_presence" translatable="false">Presence</string>
+    <string name="menu_wifi" translatable="false">WiFi</string>
+    <string name="menu_logout" translatable="false">Logout</string>
+    <string name="connecting" translatable="false">Connecting</string>
+    <string name="connected" translatable="false">Connected</string>
+    <string name="sys_msg6" translatable="false">No device connected</string>
+    <string name="inf_info1" translatable="false">Please enetr login code</string>
+    <string name="inf_info2" translatable="false">Login Code</string>
+    <string name="inf_info3" translatable="false">Settings</string>
+    <string name="inf_info4" translatable="false">Change or edit device name</string>
+    <string name="inf_info5" translatable="false">Change presence value(0-60 min)</string>
+    <string name="inf_info6" translatable="false">Change Wifi settings</string>
+    <string name="but_update" translatable="false">Update</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margine_10">10dp</dimen>
+    <dimen name="translatex_1">-43dp</dimen>
+    <dimen name="translatey_1">45dp</dimen>
+    <dimen name="translatex_2">-45dp</dimen>
+    <dimen name="translatey_2">-44dp</dimen>
+    <dimen name="translatex_3">43dp</dimen>
+    <dimen name="translatey_3">-46dp</dimen>
+    <dimen name="translatex_4">45dp</dimen>
+    <dimen name="translatey_4">42dp</dimen>
+</resources>

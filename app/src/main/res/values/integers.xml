@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="translatex_1">20</integer>
+    <integer name="translatey_1">20</integer>
+    <integer name="translatex_2">20</integer>
+    <integer name="translatey_2">20</integer>
+    <integer name="translatex_3">20</integer>
+    <integer name="translatey_3">20</integer>
+    <integer name="translatex_4">20</integer>
+    <integer name="translatey_4">20</integer>
+</resources>

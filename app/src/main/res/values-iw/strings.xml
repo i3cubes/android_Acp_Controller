@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">airswing</string>
+    <string name="txt_footer">.</string>
+    <string name="ble_not_support" translatable="false">BLE לא נתמך</string>
+    <string name="ble_err_title" translatable="false">לא נתמך</string>
+    <string name="ble_err_msg" translatable="false">אין BT בטלפון</string>
+    <string name="sys_msg1" translatable="false">מחפש מכשירים</string>
+    <string name="sys_msg2" translatable="false">מכשיר לא מחובר</string>
+    <string name="sys_msg3" translatable="false">אין תקשורת</string>
+    <string name="sys_msg4" translatable="false">אין שירות</string>
+    <string name="sys_msg5" translatable="false">אין תקשורת</string>
+    <string name="pop_cn_title" translatable="false">שנה שם מכשיר</string>
+    <string name="pop_cn_msg" translatable="false">הכנס</string>
+    <string name="pop_login_title" translatable="false">כניסה</string>
+    <string name="pop_login_msg" translatable="false">סיסמה</string>
+    <string name="pop_login_success" translatable="false">נכנס בהצלחה, שירותים מתקדמים זמינים כעת.</string>
+    <string name="pop_login_fail" translatable="false">כניסה נכשלה</string>
+    <string name="pop_login_logoff_success" translatable="false">התנתקת</string>
+    <string name="but_save" translatable="false">שמור</string>
+    <string name="but_cancel" translatable="false">בטל</string>
+    <string name="but_ok" translatable="false">אשר</string>
+    <string name="pop_cp_title" translatable="false">חיישן נוכחות בדקות</string>
+    <string name="pop_cp_msg" translatable="false">הכנס ערך 0-60</string>
+    <string name="pop_swf_title" translatable="false">הגדרות wifi</string>
+    <string name="pop_swf_ssid" translatable="false">SSID</string>
+    <string name="pop_swf_psw" translatable="false">Password</string>
+    <string name="pop_swf_fail" translatable="false">עדכון נכשל</string>
+    <string name="menu_name" translatable="false">עדכון שם מכשיר</string>
+    <string name="menu_presence" translatable="false">חיישן נוכחות</string>
+    <string name="menu_wifi" translatable="false">גישה לאינטרנט דרך WiFi</string>
+    <string name="menu_logout" translatable="false">התנתקות</string>
+    <string name="connecting" translatable="false">מתחבר</string>
+    <string name="connected" translatable="false">מחובר</string>
+    <string name="sys_msg6" translatable="false">אין מכשיר מחובר</string>
+    <string name="inf_info1" translatable="false">הכנס שם משתמש</string>
+    <string name="inf_info2" translatable="false">שם משתמש</string>
+    <string name="inf_info3" translatable="false">אפשרויות</string>
+    <string name="inf_info4" translatable="false">עדכן שם למכשיר</string>
+    <string name="inf_info5" translatable="false">עדכן זמן ללא נוכחות (0-60 דקות)</string>
+    <string name="inf_info6" translatable="false">חיבור לנתב</string>
+    <string name="but_update" translatable="false">עדכון</string>
+</resources>

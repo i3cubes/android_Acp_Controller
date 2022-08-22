@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/set_name"
+        android:icon="@drawable/p_settings"
+        android:title="@string/menu_name" />
+    <item android:id="@+id/set_presence"
+        android:icon="@drawable/p_settings"
+        android:title="@string/menu_presence"/>
+    <item android:id="@+id/set_wifi"
+        android:icon="@drawable/p_settings"
+        android:title="@string/menu_wifi" />
+    <item android:id="@+id/set_logout"
+        android:icon="@drawable/p_settings"
+        android:title="@string/menu_logout" />
+</menu>
