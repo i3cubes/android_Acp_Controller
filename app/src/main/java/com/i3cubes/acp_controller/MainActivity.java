@@ -167,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
                 System.out.println("DRPOP DOWN:"+selected_val);
                 device ddd=getDeviceFromName(selected_val);
                 if(ddd!=null){
+                    retry_connecting=false;// stop retrying connecting when disconnected at first time,
                     closeConnection();
                     connectToDevice(device_map.get(ddd.getMac()));
                 }
@@ -995,7 +996,7 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
                             rssiHigh = result.getRssi();
                             nearestDevice = d;
                         }
-                        System.out.println("DEVICE NAME:"+name);
+                        System.out.println("DEVICE NAME:"+name+"  ADDRESS:"+btDevice.getAddress());
                         d.name=(name.replace("ACP-","")).trim();
                         d.name=(d.name.replace("acp-","")).trim();
                         devices.add(d);
@@ -1136,6 +1137,7 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
         }
         System.out.println("Setting Status Image:"+sts);
         String finalSts = sts;
+        //RearrangeControls();
         MainActivity.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -1471,7 +1473,8 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
 
             switch (newState){
                 case BluetoothProfile.STATE_CONNECTED:
-                    Log.i("gattCallback","STATE_CONNECTED");
+                    mGatt=gatt;
+                    Log.i("gattCallback","STATE_CONNECTED ("+mGatt.getDevice().getAddress()+")");
                     retry_connecting=true;
                     gatt.discoverServices();
                     enableControls();
@@ -1485,11 +1488,11 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
                     keepAliveHandler.post(keepAliveRannable);
                     break;
                 case BluetoothProfile.STATE_DISCONNECTED:
-                    Log.i("gattCallback","STATE_DISCONNECTED");
+                    Log.i("gattCallback","STATE_DISCONNECTED  ("+gatt.getDevice().getAddress()+")");
                     closeProgressDialog();
                     showDisconnected("");
                     disableControls();
-                    mGatt.close();
+                    //mGatt.close();
                     mGatt=null;
                     setConnectedDevice("");
                     if(retry_connecting){
@@ -1540,7 +1543,6 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
             },4000);
 
         }
-
         @Override
         public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             Log.i("onCharacteristicRead",characteristic.getUuid().toString()+" VALUE:"+new String(characteristic.getValue()));
@@ -1728,6 +1730,7 @@ public class MainActivity extends AppCompatActivity implements RecycleViewAdapte
                 break;
             case "ffeeddcc-bbaa-9988-7766-554433221102":
                 //verify action
+                RearrangeControls();
                 procesVerifyCMD(value.toUpperCase());
                 break;
             case "ffeeddcc-bbaa-9988-7766-55443322110d":
